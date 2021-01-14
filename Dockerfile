@@ -6,4 +6,6 @@ RUN yum install -y lsof docker gcc make gcc-c++ vim git  autoconf libtool pkg-co
 
 
 
-RUN git clone --recurse-submodules -b v1.34.0 https://github.com/grpc/grpc
+RUN git clone --recurse-submodules -b v1.34.0 https://github.com/grpc/grpc --depth=1
+
+RUN yum clean
