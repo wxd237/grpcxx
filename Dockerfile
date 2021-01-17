@@ -3,7 +3,7 @@ FROM centos:8
 
 RUN yum update -y
 
-RUN yum install gcc make gcc-c++ vim git  autoconf libtool pkg-config epel-release
+RUN yum install -y gcc make gcc-c++ vim git  autoconf libtool pkg-config epel-release
 
 #RUN yum install -y lsof docker 
 
